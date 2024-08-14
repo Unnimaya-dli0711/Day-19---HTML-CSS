@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #text{
+            display: none;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onClick="toggleText()">Show/Hide Text</button>
+    <div id="text">
+        <p>This is the block of text that can be shown or hidden by clicking the button.</p>
+    </div>
+    <script>
+        function toggleText(){
+            var text=document.getElementById("text");
+            if(text.style.display=="none"){
+                text.style.display="block";
+            }else{
+                text.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
